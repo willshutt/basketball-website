@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script type="text/javascript" src="playersObject.js"></script>
+    <script type="text/javascript" src="JS/playersObject.js"></script>
 
     <title>Insert Creative Title Here</title>
   </head>
@@ -28,7 +28,7 @@
       using real stats.<br>Choose two players to compare below.</p>
       </div>
       <div class="col-lg-4" style="float: right; padding-left: 150px; padding-top: 30px;">
-        <img src="Logo-NBA.png" style="width: 180px; height: 90px; padding-left: 20px;">
+        <img src="resources/Logo-NBA.png" style="width: 180px; height: 90px; padding-left: 20px;">
         <p style="padding-top: 10px;">Powered by <a href="https://www.balldontlie.io/#introduction">balldontlie.io</a> API.</p>
       </div>
     </div>
@@ -49,7 +49,7 @@
         <form name = "player1field" onsubmit="return changeStats()">
           <input type="text" id="player1" list="playersList" placeholder="    Enter Player 1 Name" on>
           <input type="text" id="player2" placeholder="     Enter Player 2 Name" list = "playersList">
-            <datalist id = "playersList">
+            <datalist id = "playersList" style="position: absolute;">
               <option value = "Gary Trent Jr.">
               <option value = "Chris Smith">
               <option value = "Sam Dekker">
